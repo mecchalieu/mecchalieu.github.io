@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ✦ - Lieu's Portfolio</title>
+    <title> ✦ - Lieu's Tavern</title>
+    <link rel="icon" href="https://ibb.co.com/gPQRyWp" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -11,116 +12,60 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1e1e1e, #0d0d0d);
-            color: #ffffff;
+            background: #f5f5f5;
+            color: #333;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .container {
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
+            justify-content: center;
+            min-height: 100vh;
         }
         h1 {
             font-size: 3rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(90deg, #ff6f61, #ff8f70);
+            background: linear-gradient(90deg, #ffffff, #1a73e8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: textGlow 3s infinite;
+            margin-bottom: 1rem;
         }
         p {
             font-size: 1.2rem;
+            color: #555;
             margin-bottom: 2rem;
-            opacity: 0.8;
+            text-align: center;
         }
         a {
             text-decoration: none;
             color: #ffffff;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border: 2px solid #ffffff;
+            background: #1a73e8;
+            padding: 0.5rem 1.5rem;
             border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
+            transition: background 0.3s ease;
         }
         a:hover {
-            background: #ffffff;
-            color: #0d0d0d;
+            background: #155dbd;
         }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #777;
         }
-        @keyframes textGlow {
-            0%, 100% {
-                text-shadow: 0 0 5px #ff6f61, 0 0 10px #ff6f61, 0 0 20px #ff8f70;
-            }
-            50% {
-                text-shadow: 0 0 10px #ff8f70, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
-            }
-        }
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
-        .circle {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,255,255,1) 25%, rgba(0,0,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,0,1) 100%);
-            animation: float 6s infinite;
-        }
-        .circle:nth-child(1) {
-            top: 10%;
-            left: 20%;
-            animation-delay: 0s;
-        }
-        .circle:nth-child(2) {
-            top: 70%;
-            left: 40%;
-            animation-delay: 2s;
-        }
-        .circle:nth-child(3) {
-            top: 30%;
-            left: 80%;
-            animation-delay: 4s;
-        }
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
+        img.logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
-<body>
-    <div class="background">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-    </div>
-    <div class="container">
-        <h1>R.bg Ibrahim Rahmat Ramadhan</h1>
-        <p>Developer | Scripter</p>
-
-        <p>Click below to see my Portfolio!</p>
-        <a href="https://github.com/mecchalieu" target="_blank">CLICK ME!</a>
-    </div>
+<body id="portfolio-body">
+    <audio id="background-music" src="https://www.youtube.com/watch?v=3_gY-TnuSkw" autoplay loop></audio>
+    <main id="main-content">
+        <img class="logo" src="https://ibb.co.com/gPQRyWp" alt="Logo">
+        <h1 id="header-title">R.bg Ibrahim Rahmat Ramadhan</h1>
+        <p id="description">Welcome to my portfolio. I am a Developer, Explore my projects and feel free to connect with me.</p>
+        <a id="github-link" href="https://github.com/mecchalieu" target="_blank">View My GitHub</a>
+    </main>  <a id="instagram-link" href="https://instagram.com/prxlieu" target="_blank">Follow Me on Instagram</a>
+    <footer id="footer-info">
+        &copy; 2024, mecchalieu. All rights reserved.
+    </footer>
 </body>
 </html>
