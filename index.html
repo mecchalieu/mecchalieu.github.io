@@ -12,48 +12,9 @@
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            background: #000;
+            background: #f5f5f5;
             color: #333;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        nav {
-            background: #1a73e8;
-            color: #fff;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav img {
-            width: 50px;
-            height: auto;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #cce4ff;
-        }
-        main {
-            flex-grow: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -79,7 +40,6 @@
             padding: 0.5rem 1.5rem;
             border-radius: 5px;
             transition: background 0.3s ease, transform 0.2s ease-in-out;
-            position: relative;
             animation: buttonFloat 3s infinite;
         }
         a.button:hover {
@@ -97,33 +57,37 @@
             margin-top: 2rem;
             font-size: 0.9rem;
             color: #777;
-            text-align: center;
         }
         img.logo {
             width: 100px;
             height: auto;
             margin-bottom: 1rem;
         }
+        .hidden {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body id="portfolio-body">
-    <nav>
-        <img src="https://i.ibb.co.com/gPQRyWp/Lieu-20241227-003338-0000.png" alt="Logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="achievements.html">Achievements</a></li>
-        </ul>
-    </nav>
-    <audio src="https://jmp.sh/vF6FvBJM"  autoplay="1" loop="1">
-    <main id="main-content">
-        <img class="logo" src="https://i.ibb.co.com/gPQRyWp/Lieu-20241227-003338-0000.png" alt="Logo">
-        <h1 id="header-title">R.bg Ibrahim Rahmat Ramadhan</h1>
-        <p id="description">Welcome to my portfolio. I am a Developer, Explore my projects and feel free to connect with me.</p>
-        <a id="github-link" href="https://github.com/mecchalieu" target="_blank">GitHub</a>
-        <a id="instagram-link" href="https://instagram.com/prxlieu" target="_blank">Instagram</a>
-    </main>
+    <img class="logo" src="https://i.ibb.co.com/gPQRyWp/Lieu-20241227-003338-0000.png" alt="Logo">
+    <h1 id="header-title">R.bg Ibrahim Rahmat Ramadhan</h1>
+    <p id="description">I am a Developer</p>
+    <a class="button" id="github-link" href="https://github.com/mecchalieu" target="_blank">GitHub</a>
+    <a class="button" id="instagram-link" href="https://instagram.com/prxlieu" target="_blank">Instagram</a>
+    
+    <!-- Hidden YouTube Audio with Autoplay and Loop -->
+    <iframe
+        id="youtube-audio"
+        class="hidden"
+        src="https://www.youtube.com/embed/XhMCtnSf71E?enablejsapi=1&autoplay=1&loop=1"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+
     <footer id="footer-info">
-        &copy; 2024 Your Name. All rights reserved.
+        &copy; 2024 mecchalieu. All rights reserved.
     </footer>
 </body>
 </html>
