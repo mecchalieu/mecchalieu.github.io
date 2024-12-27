@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ✦ - Lieu's Tavern </title>
+    <title>✦ - Lieu's Tavern</title>
     <link rel="icon" href="https://i.ibb.co.com/gPQRyWp/Lieu-20241227-003338-0000.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
             color: #555;
             margin-bottom: 2rem;
         }
-        a.button {
+        a {
             text-decoration: none;
             color: #ffffff;
             background: #610279;
@@ -41,9 +41,16 @@
             border-radius: 5px;
             transition: background 0.3s ease, transform 0.2s ease-in-out;
             animation: buttonFloat 3s infinite;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-        a.button:hover {
-            background: #610279;
+        a:hover {
+            background: #5d015d;
+        }
+        a img {
+            width: 20px;
+            height: 20px;
         }
         @keyframes buttonFloat {
             0%, 100% {
@@ -63,21 +70,27 @@
             height: auto;
             margin-bottom: 1rem;
         }
-        .hidden {
-            width: 0;
-            height: 0;
-            overflow: hidden;
-        }
     </style>
 </head>
-<body id="portfolio-body">
-    <audio src="https://j.top4top.io/m_32836e2d61.mp3"  autoplay="1" loop="1">
-        <img class="logo" src="https://tenor.com/view/maxwell-christmas-gif-27225464" alt="gif">
-        <h1 id="header-title">R.bg Ibrahim Rahmat Ramadhan</h1>
-        <p id="description">Welcome to my portfolio. I am a Developer, Explore my projects and feel free to connect with me.</p>
-        <a id="github-link" href="https://github.com/mecchalieu" target="_blank"> My GitHub </a>
-        <a id="instagram-link" href="https://instagram.com/prxlieu" target="_blank"> Instagram </a>
-    <footer id="footer-info">
+<body>
+    <audio src="https://j.top4top.io/m_32836e2d61.mp3"  autoplay="1" loop="1"></audio>
+    <img src="https://media.tenor.com/d13jPFfU24YAAAAi/maxwell-christmas.gif">
+    <h1>R.bg Ibrahim Rahmat Ramadhan</h1>
+    <p>Welcome to my Website!</p>
+    <a href="https://github.com/mecchalieu" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1305162666351923290/1322107813379571773/kisspng-computer-icons-github-clip-art-transparency-free-c-ebess-uq-undergrate-electrical-engineering-stude-5cc270fa39a2f4.0384337715562467782361.png?ex=676fac5a&is=676e5ada&hm=15bac075ba89cc80023cfa761cbc6cf223e5f521a33ab1a2ca8185a68776be8b&" alt="GitHub Logo">
+        My GitHub
+    </a>
+    <a href="https://instagram.com/prxlieu" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1305162666351923290/1322108258953199687/ig_black.png?ex=676facc4&is=676e5b44&hm=2184a73fda6e27a8a74771b9bc7dbb96d67a94969bfd160ffb5ab4d97810118d&" alt="Instagram Logo">
+        Instagram
+    </a>
+    <a href="https://discord.com/users/mecchalieu" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1305162666351923290/1322107813018865715/8f6fcd74d820d25a84b60976b91ceb81.png?ex=676fac5a&is=676e5ada&hm=0b8caffdb3f086c40e87bc219cabdafe57fb02c91acff509fdc1d7f834a38906&" alt="Discord Logo">
+        Discord
+    </a>
+    
+    <footer>
         &copy; 2024 Mecchalieu. All rights reserved.
     </footer>
 </body>
